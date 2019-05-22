@@ -1,5 +1,6 @@
 Category.destroy_all
 Task.destroy_all
+Email.destroy_all
 
 puts "Previous records deleted."
 
@@ -15,3 +16,8 @@ puts "Previous records deleted."
 end
 
 puts "#{Category.all.length} cats and #{Task.all.length} tasks generated."
+
+5.times do
+  Email.create(object: Faker::Book.title, body: Faker::Lorem.paragraph)
+end
+puts "#{Email.all.length} fake mails generated."
