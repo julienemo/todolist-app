@@ -8,7 +8,7 @@ before_action :authenticate_user!
     @task = Task.new(task_params)
     @category = Category.find(category_params)
     @task.category = @category
-    
+
     if @task.save
       respond_to do |format|
         format.html {
@@ -43,7 +43,14 @@ before_action :authenticate_user!
   def destroy
     @task = Task.find(params[:id])
     @task.destroy
-    redirect_to root_path
+
+    respond_to do |format|
+      format.html {
+       redirect_to root_path
+       flash[:notice] = "Task deleted"
+      }
+      format.js { }
+    end
   end
 
 

@@ -12,7 +12,9 @@
         <% unless task.deadline.nil? %>
           , to read: <%= task.deadline.strftime('%D')  %>
         <% end %>
-        <span><i class="fas fa-trash"></i></span>
+        <%= link_to task_path(3), method: :delete do %>
+          <i class="fas fa-trash del"></i>
+        <% end %>
       </li>
       <% end %>
     </ul>
