@@ -12,6 +12,7 @@
         <% unless task.deadline.nil? %>
           , to read: <%= task.deadline.strftime('%D')  %>
         <% end %>
+        <span><i class="fas fa-trash"></i></span>
       </li>
       <% end %>
     </ul>
