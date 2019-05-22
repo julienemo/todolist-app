@@ -1,0 +1,17 @@
+<div class="container d-flex justify-content-between">
+  <div class="col-4">
+    <div class="card-header">
+      Your mails
+    </div>
+    <ul class="list-group list-group-flush">
+      <% @emails.each do |e|%>
+        <li class="list-group-item" id="<%= e.id%>"> <%= e.object%></li>
+      <% end %>
+    </ul>
+  </div>
+  <div class="col-8">
+    <%= render "each", e: Email.find(1) %>
+    <%= button_to "Check mail", emails_path, class: "btn btn-info mt-5", remote: true %>
+  </div>
+
+</div>
