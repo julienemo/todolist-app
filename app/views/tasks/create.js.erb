@@ -1,0 +1,2 @@
+let categoryZone = $("li:contains(<%= @category.title%>)+div>ul");
+categoryZone.append("<%= escape_javascript(render "new_task", task: @task) %>");
