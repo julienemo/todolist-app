@@ -3,6 +3,21 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 
+#########################
+##### Customer gems######
+gem 'faker'
+gem 'table_print'
+gem 'pry'
+gem 'bcrypt'
+gem 'dotenv-rails'
+gem 'devise'
+gem 'stripe'
+gem 'bootstrap-sass'
+gem 'font-awesome-rails'
+gem 'jquery-rails'
+
+#########################
+
 gem 'jquery-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
