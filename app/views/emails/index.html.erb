@@ -1,3 +1,6 @@
+<div class="d-flex justify-content-center pt-0">
+  <%= button_to "Check mail", emails_path, title: "Click to recieve a new mail *^0^*", class: "btn btn-primary mb-5", remote: true %>
+</div>
 <div class="container d-flex justify-content-between">
   <div class="col-4" id="email_list">
     <div class="card-header font-weight-bolder">
@@ -14,16 +17,7 @@
     </ul>
   </div>
   <div class="col-8" id="email_detail">
-    <div class="card-header font-weight-bolder">
-      Email detail
-    </div>
-    <li class="list-group-item text-secondary" style="height: 250px;" >Select an email to view detail.</li>
-    <div class="container d-flex justify-content-between">
-      <%= button_to "Check mail", emails_path, title: "Click to recieve a new mail *^0^*", class: "btn btn-primary mt-5", remote: true %>
-      <%= button_to "Mark as unread", emails_path, class: "btn btn-primary mt-5", remote: true %>
-      <%= button_to "Delete mail", emails_path, class: "btn btn-danger mt-5", remote: true %>
-
-    </div>
+    <%= render "empty_detail"%>
   </div>
 
 </div>

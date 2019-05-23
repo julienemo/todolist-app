@@ -1,0 +1,11 @@
+<div class="card-header font-weight-bolder">
+  <%= email.object%>
+  <span class='text-secondary'><%= email.created_at %></span>
+</div>
+<li class="list-group-item" style="height: 250px;" >
+  <%= email.body%>
+</li>
+<div class="container d-flex justify-content-between">
+<%= button_to "Mark as unread", emails_path, class: "btn btn-primary mt-5", remote: true %>
+<%= button_to "Delete mail", email_path(email), method: :delete, class: "btn btn-danger mt-5", remote: true %>
+</div>

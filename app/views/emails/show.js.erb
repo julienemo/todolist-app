@@ -1,4 +1,3 @@
 $(".active").removeClass("active");
-$("#email_detail .card-header").html("<%= @email.object%> <span class='text-secondary'><%= @email.created_at%></span>");
-$("#email_detail .list-group-item").text("<%= @email.body%>").removeClass("text-secondary");
 $('#' + <%= @id%>).addClass("active");
+$("#email_detail").html("<%= escape_javascript(raw render 'detail',email: @email).html_safe %>")

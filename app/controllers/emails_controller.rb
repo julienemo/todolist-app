@@ -26,9 +26,24 @@ class EmailsController < ApplicationController
     @id = params[:id]
     @email = Email.find(@id)
     respond_to do |format|
+      format.html {
+        redirect_to email_index_path
+       } # html still needs to reload page
       format.js { }
 
     end
+  end
 
+  def destroy
+    @id = params[:id]
+    @email = Email.find(@id)
+    @email.destroy
+    respond_to do |format|
+      format.html {
+        redirect_to email_index_path
+       } # html still needs to reload page
+      format.js { }
+
+    end
   end
 end
