@@ -10197,3 +10197,118 @@ Processing by EmailsController#create as JS
 Completed 200 OK in 10ms (Views: 4.0ms | ActiveRecord: 3.1ms)
 
 
+Started GET "/" for ::1 at 2019-05-23 11:48:24 +0200
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:7
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/emails/index.html.erb:13
+  Rendered emails/_each.html.erb (0.4ms)
+  Rendered emails/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-05-23 11:48:25 +0200
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.4ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:7
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/emails/index.html.erb:13
+  Rendered emails/_each.html.erb (0.4ms)
+  Rendered emails/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  Rendered layouts/_flash.html.erb (0.9ms)
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-05-23 11:48:25 +0200
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:7
+  [1m[36mEmail Load (0.1ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/emails/index.html.erb:13
+  Rendered emails/_each.html.erb (0.3ms)
+  Rendered emails/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-05-23 11:48:25 +0200
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:7
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/emails/index.html.erb:13
+  Rendered emails/_each.html.erb (0.4ms)
+  Rendered emails/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+Completed 200 OK in 29ms (Views: 27.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/emails" for ::1 at 2019-05-23 11:48:26 +0200
+Processing by EmailsController#create as JS
+  Parameters: {"authenticity_token"=>"LqrHPfcrQE96qlF7RKfGSNqyg45Omoh45uIjpMiOP5s17HZG51lnOAZCRuDXJNxRS4mjZK0toXx4didWv4BlHw=="}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/emails_controller.rb:10
+  [1m[36mEmail Create (0.2ms)[0m  [1m[32mINSERT INTO "emails" ("object", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["object", "Far From the Madding Crowd"], ["body", "Facere qui eius. Corrupti iure natus. Vero aut aliquam."], ["created_at", "2019-05-23 09:48:26.788368"], ["updated_at", "2019-05-23 09:48:26.788368"]]
+  ↳ app/controllers/emails_controller.rb:10
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/emails_controller.rb:10
+  Rendering emails/create.js.erb
+  Rendered emails/_new.html.erb (0.2ms)
+  Rendered emails/create.js.erb (0.9ms)
+Completed 200 OK in 9ms (Views: 3.1ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for ::1 at 2019-05-23 11:48:28 +0200
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:7
+  [1m[36mEmail Load (0.1ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/emails/index.html.erb:13
+  Rendered emails/_each.html.erb (0.3ms)
+  Rendered emails/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/emails" for ::1 at 2019-05-23 11:48:29 +0200
+Processing by EmailsController#create as JS
+  Parameters: {"authenticity_token"=>"3UBjo3X+EuuY8wJuohZxMLCZt2rhgIiXUTt64QtPlc7GBtLYZYw1nOQbFfUxlWspIaKXgAI3oZPPr34TfEHPSg=="}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/emails_controller.rb:10
+  [1m[36mEmail Create (0.3ms)[0m  [1m[32mINSERT INTO "emails" ("object", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["object", "From Here to Eternity"], ["body", "Et soluta nobis. Et sed rerum. Voluptatibus eaque ullam."], ["created_at", "2019-05-23 09:48:29.924165"], ["updated_at", "2019-05-23 09:48:29.924165"]]
+  ↳ app/controllers/emails_controller.rb:10
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/emails_controller.rb:10
+  Rendering emails/create.js.erb
+  Rendered emails/_new.html.erb (0.5ms)
+  Rendered emails/create.js.erb (1.4ms)
+Completed 200 OK in 9ms (Views: 3.3ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/emails" for ::1 at 2019-05-23 11:48:30 +0200
+Processing by EmailsController#create as JS
+  Parameters: {"authenticity_token"=>"3UBjo3X+EuuY8wJuohZxMLCZt2rhgIiXUTt64QtPlc7GBtLYZYw1nOQbFfUxlWspIaKXgAI3oZPPr34TfEHPSg=="}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/emails_controller.rb:10
+  [1m[36mEmail Create (0.3ms)[0m  [1m[32mINSERT INTO "emails" ("object", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["object", "Infinite Jest"], ["body", "Magnam exercitationem quasi. Dolor eum quisquam. Aut ut doloremque."], ["created_at", "2019-05-23 09:48:30.996139"], ["updated_at", "2019-05-23 09:48:30.996139"]]
+  ↳ app/controllers/emails_controller.rb:10
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/emails_controller.rb:10
+  Rendering emails/create.js.erb
+  Rendered emails/_new.html.erb (0.3ms)
+  Rendered emails/create.js.erb (1.2ms)
+Completed 200 OK in 10ms (Views: 3.2ms | ActiveRecord: 3.0ms)
+
+
