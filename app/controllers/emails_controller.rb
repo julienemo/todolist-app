@@ -23,8 +23,11 @@ class EmailsController < ApplicationController
   end
 
   def show
+    @id = params[:id]
+    @email = Email.find(@id)
     respond_to do |format|
-      format.html { redirect_to email_index_path }
+      format.js { }
+
     end
 
   end

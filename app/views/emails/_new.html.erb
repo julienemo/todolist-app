@@ -1,1 +1,5 @@
-<li class="list-group-item font-weight-bolder" id="<%= e.id%>"> <%= e.object%></li>
+<li class="list-group-item" id="<%= e.id %>">
+  <%= link_to email_path(e.id), class: "font-weight-bold", remote: true do %>
+      <%= e.object%>
+  <% end %>
+</li>

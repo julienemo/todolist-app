@@ -5,16 +5,25 @@
     </div>
     <ul class="list-group list-group-flush">
       <% @emails.sort.reverse.each do |e|%>
-        <li class="list-group-item" id="<%= e.id%>"> <%= e.object%></li>
+        <li class="list-group-item" id="<%= e.id %>">
+          <%= link_to email_path(e.id), remote: true do %>
+              <%= e.object%>
+          <% end %>
+        </li>
       <% end %>
     </ul>
   </div>
-  <div class="col-8">
+  <div class="col-8" id="email_detail">
     <div class="card-header font-weight-bolder">
       Email detail
     </div>
-    <li class="list-group-item text-secondary" >Select an email to view detail.</li>
-    <%= button_to "Check mail", emails_path, title: "Click to recieve a new mail *^0^*", class: "btn btn-primary mt-5", remote: true %>
+    <li class="list-group-item text-secondary" style="height: 250px;" >Select an email to view detail.</li>
+    <div class="container d-flex justify-content-between">
+      <%= button_to "Check mail", emails_path, title: "Click to recieve a new mail *^0^*", class: "btn btn-primary mt-5", remote: true %>
+      <%= button_to "Mark as unread", emails_path, class: "btn btn-primary mt-5", remote: true %>
+      <%= button_to "Delete mail", emails_path, class: "btn btn-danger mt-5", remote: true %>
+
+    </div>
   </div>
 
 </div>
