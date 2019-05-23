@@ -1,11 +1,7 @@
 Julie Kwok
 
 
-Clone the repo, bundle, create db if needed, migrate and seed.
-
-Launch the server then go to: http://localhost:3000/
-
-The page is presented in three parts:
+To visualize the app on Heroku:https://julie-todo.herokuapp.com/
 
 * on top: the "check mail" button generates a new mail, marked as activat item in the list. A new mail is displayed in blue. (2.3 :heavy_check_mark:)
 
@@ -19,4 +15,4 @@ click any mail in the list on the left to visualize its content detail on the ri
 Once a mail is selected, two buttons will appear below the content details:
 
 * Delete (deletes email from left and right, reset the detail section to empty) (2.5 :heavy_check_mark:)
-* Mark as unread(marks email as unread without refreshing. Unread = object displayed in bold in the list on the left)(2.6 :heavy_check_mark:)(:heavy_exclamation_mark: didn't do the "mark as READ" part coz any click will automatically put the mail as read)
+* Mark as unread(marks email as unread without refreshing. Unread = object displayed in bold in the list on the left)( the other 2.5 :heavy_check_mark:)(:heavy_exclamation_mark: didn't do the "mark as READ" part coz any click will automatically put the mail as read)
