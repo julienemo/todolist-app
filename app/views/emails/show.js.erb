@@ -1,3 +1,4 @@
 $(".active").removeClass("active");
-$('#' + <%= @id%>).addClass("active");
+$('#' + <%= @id%>).addClass("active")
+$('#' + <%= @id%>).find(".font-weight-bold").removeClass("font-weight-bold");
 $("#email_detail").html("<%= escape_javascript(raw render 'detail',email: @email).html_safe %>")

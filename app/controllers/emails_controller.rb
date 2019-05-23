@@ -25,6 +25,7 @@ class EmailsController < ApplicationController
   def show
     @id = params[:id]
     @email = Email.find(@id)
+    @email.update(read: true)
     respond_to do |format|
       format.html {
         redirect_to email_index_path
@@ -43,7 +44,18 @@ class EmailsController < ApplicationController
         redirect_to email_index_path
        } # html still needs to reload page
       format.js { }
+    end
+  end
 
+  def update
+    @id = params[:id]
+    @email = Email.find(@id)
+    @email.update(read:false)
+    respond_to do |format|
+      format.html {
+        redirect_to email_index_path
+       } # html still needs to reload page
+      format.js { }
     end
   end
 end

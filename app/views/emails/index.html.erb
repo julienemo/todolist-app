@@ -9,9 +9,16 @@
     <ul class="list-group list-group-flush">
       <% @emails.sort.reverse.each do |e|%>
         <li class="list-group-item" id="<%= e.id %>">
-          <%= link_to email_path(e.id), remote: true do %>
-              <%= e.object%>
+          <% if e.read == false %>
+            <%= link_to email_path(e.id), class: "font-weight-bold text-dark", remote: true do %>
+              <%= e.object%> <%= e.read%>
+            <% end %>
+          <% else %>
+            <%= link_to email_path(e.id), class:"text-dark", remote: true do %>
+              <%= e.object%> <%= e.read%>
+            <% end %>
           <% end %>
+
         </li>
       <% end %>
     </ul>
