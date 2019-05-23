@@ -18,5 +18,5 @@ click any mail in the list on the left to visualize its content detail on the ri
 
 Once a mail is selected, two buttons will appear below the content details:
 
-* Delete (deletes email from left and right, reset the detail section to empty)
-* Mark as unread(marks email as unread without refreshing. Unread = object displayed in bold in the list on the left)
+* Delete (deletes email from left and right, reset the detail section to empty) (2.5 :heavy_check_mark:)
+* Mark as unread(marks email as unread without refreshing. Unread = object displayed in bold in the list on the left)(2.6 :heavy_check_mark:)
