@@ -18,6 +18,6 @@ end
 puts "#{Category.all.length} cats and #{Task.all.length} tasks generated."
 
 5.times do
-  Email.create(object: Faker::Book.title, body: Faker::Lorem.paragraph)
+  Email.create(object: Faker::Book.title, body: Faker::Lorem.paragraph(9, false, 4))
 end
 puts "#{Email.all.length} fake mails generated."

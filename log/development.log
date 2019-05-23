@@ -10397,3 +10397,1351 @@ Processing by EmailsController#index as HTML
 Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/" for ::1 at 2019-05-23 11:54:49 +0200
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:7
+  [1m[36mEmail Load (0.1ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/emails/index.html.erb:13
+  Rendered emails/_each.html.erb (0.4ms)
+  Rendered emails/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-05-23 11:54:49 +0200
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:7
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/emails/index.html.erb:13
+  Rendered emails/_each.html.erb (0.4ms)
+  Rendered emails/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/emails" for ::1 at 2019-05-23 11:54:51 +0200
+Processing by EmailsController#create as JS
+  Parameters: {"authenticity_token"=>"yWYmHHREpS42OLzZ0EsYTRv6vzWZ6iJtLjXL59uBupvSIJdnZDaCWUrQq0JDyAJUisGf33pdC2mwoc8VrI/gHw=="}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/emails_controller.rb:10
+  [1m[36mEmail Create (0.2ms)[0m  [1m[32mINSERT INTO "emails" ("object", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["object", "The Daffodil Sky"], ["body", "Incidunt et laborum. Minima culpa quisquam. Aut eum est."], ["created_at", "2019-05-23 09:54:51.199737"], ["updated_at", "2019-05-23 09:54:51.199737"]]
+  ↳ app/controllers/emails_controller.rb:10
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/emails_controller.rb:10
+  Rendering emails/create.js.erb
+  Rendered emails/_new.html.erb (0.3ms)
+  Rendered emails/create.js.erb (1.1ms)
+Completed 200 OK in 9ms (Views: 3.5ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/emails" for ::1 at 2019-05-23 11:54:52 +0200
+Processing by EmailsController#create as JS
+  Parameters: {"authenticity_token"=>"yWYmHHREpS42OLzZ0EsYTRv6vzWZ6iJtLjXL59uBupvSIJdnZDaCWUrQq0JDyAJUisGf33pdC2mwoc8VrI/gHw=="}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/emails_controller.rb:10
+  [1m[36mEmail Create (0.3ms)[0m  [1m[32mINSERT INTO "emails" ("object", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["object", "Far From the Madding Crowd"], ["body", "Architecto ratione ullam. Provident molestiae facere. Veniam quos adipisci."], ["created_at", "2019-05-23 09:54:52.147302"], ["updated_at", "2019-05-23 09:54:52.147302"]]
+  ↳ app/controllers/emails_controller.rb:10
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/emails_controller.rb:10
+  Rendering emails/create.js.erb
+  Rendered emails/_new.html.erb (0.4ms)
+  Rendered emails/create.js.erb (1.4ms)
+Completed 200 OK in 10ms (Views: 3.9ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/emails" for ::1 at 2019-05-23 11:54:52 +0200
+Processing by EmailsController#create as JS
+  Parameters: {"authenticity_token"=>"yWYmHHREpS42OLzZ0EsYTRv6vzWZ6iJtLjXL59uBupvSIJdnZDaCWUrQq0JDyAJUisGf33pdC2mwoc8VrI/gHw=="}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/emails_controller.rb:10
+  [1m[36mEmail Create (0.2ms)[0m  [1m[32mINSERT INTO "emails" ("object", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["object", "Jacob Have I Loved"], ["body", "Impedit laboriosam ea. Sed quaerat est. Quae quo id."], ["created_at", "2019-05-23 09:54:52.725700"], ["updated_at", "2019-05-23 09:54:52.725700"]]
+  ↳ app/controllers/emails_controller.rb:10
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/emails_controller.rb:10
+  Rendering emails/create.js.erb
+  Rendered emails/_new.html.erb (0.2ms)
+  Rendered emails/create.js.erb (1.0ms)
+Completed 200 OK in 7ms (Views: 3.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2019-05-23 11:55:49 +0200
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:7
+  [1m[36mEmail Load (0.1ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/emails/index.html.erb:13
+  Rendered emails/_each.html.erb (0.3ms)
+  Rendered emails/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+Completed 200 OK in 2234ms (Views: 2232.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-05-23 11:57:52 +0200
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.4ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:7
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/emails/index.html.erb:13
+  Rendered emails/_each.html.erb (0.4ms)
+  Rendered emails/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 164ms (Views: 162.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-05-23 11:57:53 +0200
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:7
+  [1m[36mEmail Load (0.1ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/emails/index.html.erb:13
+  Rendered emails/_each.html.erb (0.3ms)
+  Rendered emails/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-05-23 11:57:53 +0200
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:7
+  [1m[36mEmail Load (0.1ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/emails/index.html.erb:13
+  Rendered emails/_each.html.erb (0.5ms)
+  Rendered emails/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mCategory Destroy (0.3ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 10]]
+  ↳ db/seeds.rb:1
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mCategory Destroy (0.3ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 11]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mCategory Destroy (0.3ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 12]]
+  ↳ db/seeds.rb:1
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 89]]
+  ↳ db/seeds.rb:2
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mTask Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 90]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mTask Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 91]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mTask Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 92]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 93]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mTask Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 94]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mTask Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 95]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mTask Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 96]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mTask Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 97]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[36mEmail Load (0.5ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 3]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 4]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 5]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 6]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 7]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.1ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 8]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 9]]
+  ↳ db/seeds.rb:3
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 10]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 11]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 12]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 13]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 14]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 15]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 16]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 17]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 18]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 19]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 20]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 21]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 22]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 23]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 24]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 25]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 26]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 27]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 28]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 29]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 30]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 31]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 32]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 33]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 34]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 35]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 36]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mCategory Create (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Fanfiction"], ["created_at", "2019-05-23 09:58:32.494463"], ["updated_at", "2019-05-23 09:58:32.494463"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "deadline", "category_id", "image") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2019-05-23 09:58:32.500295"], ["updated_at", "2019-05-23 09:58:32.500295"], ["title", "The Last Temptation"], ["deadline", "2019-05-25 00:00:00"], ["category_id", 13], ["image", "https://robohash.org/pariatursequivoluptatum.png?size=300x300&set=set1"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "deadline", "category_id", "image") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2019-05-23 09:58:32.503080"], ["updated_at", "2019-05-23 09:58:32.503080"], ["title", "The Skull Beneath the Skin"], ["deadline", "2019-05-25 00:00:00"], ["category_id", 13], ["image", "https://robohash.org/suscipitvelitquia.png?size=300x300&set=set1"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "deadline", "category_id", "image") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2019-05-23 09:58:32.505857"], ["updated_at", "2019-05-23 09:58:32.505857"], ["title", "Recalled to Life"], ["deadline", "2019-06-07 00:00:00"], ["category_id", 13], ["image", "https://robohash.org/ettotamaut.png?size=300x300&set=set1"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mCategory Create (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Fanfiction"], ["created_at", "2019-05-23 09:58:32.508594"], ["updated_at", "2019-05-23 09:58:32.508594"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "deadline", "category_id", "image") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2019-05-23 09:58:32.511395"], ["updated_at", "2019-05-23 09:58:32.511395"], ["title", "To Sail Beyond the Sunset"], ["deadline", "2019-06-12 00:00:00"], ["category_id", 14], ["image", "https://robohash.org/corporiseosnulla.png?size=300x300&set=set1"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "deadline", "category_id", "image") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2019-05-23 09:58:32.514130"], ["updated_at", "2019-05-23 09:58:32.514130"], ["title", "Precious Bane"], ["deadline", "2019-05-25 00:00:00"], ["category_id", 14], ["image", "https://robohash.org/dolorumrerumeius.png?size=300x300&set=set1"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "deadline", "category_id", "image") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2019-05-23 09:58:32.516920"], ["updated_at", "2019-05-23 09:58:32.516920"], ["title", "This Lime Tree Bower"], ["deadline", "2019-06-08 00:00:00"], ["category_id", 14], ["image", "https://robohash.org/porroodiosed.png?size=300x300&set=set1"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mCategory Create (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Science fiction"], ["created_at", "2019-05-23 09:58:32.519553"], ["updated_at", "2019-05-23 09:58:32.519553"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "deadline", "category_id", "image") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2019-05-23 09:58:32.522272"], ["updated_at", "2019-05-23 09:58:32.522272"], ["title", "By Grand Central Station I Sat Down and Wept"], ["deadline", "2019-06-03 00:00:00"], ["category_id", 15], ["image", "https://robohash.org/quiadistinctioin.png?size=300x300&set=set1"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "deadline", "category_id", "image") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2019-05-23 09:58:32.525104"], ["updated_at", "2019-05-23 09:58:32.525104"], ["title", "Arms and the Man"], ["deadline", "2019-06-03 00:00:00"], ["category_id", 15], ["image", "https://robohash.org/estrepellendusvoluptatum.png?size=300x300&set=set1"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "deadline", "category_id", "image") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2019-05-23 09:58:32.527924"], ["updated_at", "2019-05-23 09:58:32.527924"], ["title", "Time To Murder And Create"], ["deadline", "2019-06-12 00:00:00"], ["category_id", 15], ["image", "https://robohash.org/quaevoluptatemiure.png?size=300x300&set=set1"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ db/seeds.rb:18
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mEmail Create (0.3ms)[0m  [1m[32mINSERT INTO "emails" ("object", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["object", "In a Dry Season"], ["body", "Doloremque reprehenderit quae. Rem blanditiis aspernatur. Voluptatem rerum enim."], ["created_at", "2019-05-23 09:58:32.532460"], ["updated_at", "2019-05-23 09:58:32.532460"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mEmail Create (0.3ms)[0m  [1m[32mINSERT INTO "emails" ("object", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["object", "To Say Nothing of the Dog"], ["body", "Voluptatibus aut voluptas. Incidunt expedita numquam. Voluptatem expedita fugiat."], ["created_at", "2019-05-23 09:58:32.535226"], ["updated_at", "2019-05-23 09:58:32.535226"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mEmail Create (0.3ms)[0m  [1m[32mINSERT INTO "emails" ("object", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["object", "It's a Battlefield"], ["body", "Explicabo iste quia. Et deserunt animi. Consequatur sit vero."], ["created_at", "2019-05-23 09:58:32.537844"], ["updated_at", "2019-05-23 09:58:32.537844"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mEmail Create (0.3ms)[0m  [1m[32mINSERT INTO "emails" ("object", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["object", "Those Barren Leaves, Thrones, Dominations"], ["body", "Ut aperiam sit. Vel a reprehenderit. Illo ut ipsum."], ["created_at", "2019-05-23 09:58:32.540465"], ["updated_at", "2019-05-23 09:58:32.540465"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mEmail Create (0.2ms)[0m  [1m[32mINSERT INTO "emails" ("object", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["object", "The Golden Apples of the Sun"], ["body", "Earum nemo commodi. A dicta qui. Ex voluptatum voluptas."], ["created_at", "2019-05-23 09:58:32.543388"], ["updated_at", "2019-05-23 09:58:32.543388"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ db/seeds.rb:23
+Started GET "/" for ::1 at 2019-05-23 11:58:34 +0200
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:7
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/emails/index.html.erb:13
+  Rendered emails/index.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Email with 'id'=1):
+  
+app/views/emails/index.html.erb:13:in `_app_views_emails_index_html_erb__1018770594468233846_70123322007660'
+  [1m[36mEmail Load (0.4ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" ORDER BY "emails"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/" for ::1 at 2019-05-23 11:58:57 +0200
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:7
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/emails/index.html.erb:13
+  Rendered emails/_each.html.erb (0.4ms)
+  Rendered emails/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/emails" for ::1 at 2019-05-23 11:59:04 +0200
+Processing by EmailsController#create as JS
+  Parameters: {"authenticity_token"=>"pSWRI4rPtGRwS01ShaVeP5hq2/vRUbJDBDpvzSADtRC+YyBYmr2TEwyjWskWJkQmCVH7ETLmm0earms/Vw3vlA=="}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/emails_controller.rb:10
+  [1m[36mEmail Create (0.3ms)[0m  [1m[32mINSERT INTO "emails" ("object", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["object", "Mr Standfast"], ["body", "Reprehenderit atque corrupti. Voluptatem officia consequuntur. Ex qui rem."], ["created_at", "2019-05-23 09:59:04.698415"], ["updated_at", "2019-05-23 09:59:04.698415"]]
+  ↳ app/controllers/emails_controller.rb:10
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/emails_controller.rb:10
+  Rendering emails/create.js.erb
+  Rendered emails/_new.html.erb (0.2ms)
+  Rendered emails/create.js.erb (1.1ms)
+Completed 200 OK in 9ms (Views: 3.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for ::1 at 2019-05-23 11:59:50 +0200
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:7
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/emails/index.html.erb:13
+  Rendered emails/_each.html.erb (0.4ms)
+  Rendered emails/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-05-23 12:01:07 +0200
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:7
+  [1m[36mEmail Load (0.1ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/emails/index.html.erb:13
+  Rendered emails/_each.html.erb (0.4ms)
+  Rendered emails/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 23ms (Views: 22.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-05-23 12:01:24 +0200
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:7
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/emails/index.html.erb:13
+  Rendered emails/_each.html.erb (0.3ms)
+  Rendered emails/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-05-23 12:01:35 +0200
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:7
+  [1m[36mEmail Load (0.1ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/emails/index.html.erb:13
+  Rendered emails/_each.html.erb (0.4ms)
+  Rendered emails/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-05-23 12:01:57 +0200
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:7
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/emails/index.html.erb:13
+  Rendered emails/_each.html.erb (0.4ms)
+  Rendered emails/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mCategory Destroy (0.3ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 13]]
+  ↳ db/seeds.rb:1
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mCategory Destroy (0.2ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 14]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mCategory Destroy (0.2ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 15]]
+  ↳ db/seeds.rb:1
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mTask Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 98]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mTask Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 99]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mTask Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 100]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 101]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mTask Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 102]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 103]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 104]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 105]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 106]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[36mEmail Load (0.4ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 37]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 38]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 39]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 40]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 41]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 42]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mCategory Create (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Mythopoeia"], ["created_at", "2019-05-23 10:03:51.570407"], ["updated_at", "2019-05-23 10:03:51.570407"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "deadline", "category_id", "image") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2019-05-23 10:03:51.576443"], ["updated_at", "2019-05-23 10:03:51.576443"], ["title", "In a Glass Darkly"], ["deadline", "2019-06-08 00:00:00"], ["category_id", 16], ["image", "https://robohash.org/abomniscupiditate.png?size=300x300&set=set1"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "deadline", "category_id", "image") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2019-05-23 10:03:51.579370"], ["updated_at", "2019-05-23 10:03:51.579370"], ["title", "I Know Why the Caged Bird Sings"], ["deadline", "2019-05-24 00:00:00"], ["category_id", 16], ["image", "https://robohash.org/situllamqui.png?size=300x300&set=set1"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "deadline", "category_id", "image") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2019-05-23 10:03:51.581983"], ["updated_at", "2019-05-23 10:03:51.581983"], ["title", "The Proper Study"], ["deadline", "2019-06-03 00:00:00"], ["category_id", 16], ["image", "https://robohash.org/quiautratione.png?size=300x300&set=set1"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Humor"], ["created_at", "2019-05-23 10:03:51.584465"], ["updated_at", "2019-05-23 10:03:51.584465"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "deadline", "category_id", "image") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2019-05-23 10:03:51.587106"], ["updated_at", "2019-05-23 10:03:51.587106"], ["title", "Many Waters"], ["deadline", "2019-05-29 00:00:00"], ["category_id", 17], ["image", "https://robohash.org/harumoptiorepudiandae.png?size=300x300&set=set1"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "deadline", "category_id", "image") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2019-05-23 10:03:51.589740"], ["updated_at", "2019-05-23 10:03:51.589740"], ["title", "No Country for Old Men"], ["deadline", "2019-06-11 00:00:00"], ["category_id", 17], ["image", "https://robohash.org/harumimpeditut.png?size=300x300&set=set1"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "deadline", "category_id", "image") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2019-05-23 10:03:51.592809"], ["updated_at", "2019-05-23 10:03:51.592809"], ["title", "The Golden Apples of the Sun"], ["deadline", "2019-06-06 00:00:00"], ["category_id", 17], ["image", "https://robohash.org/magnameosfugiat.png?size=300x300&set=set1"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Fiction in verse"], ["created_at", "2019-05-23 10:03:51.595347"], ["updated_at", "2019-05-23 10:03:51.595347"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "deadline", "category_id", "image") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2019-05-23 10:03:51.598063"], ["updated_at", "2019-05-23 10:03:51.598063"], ["title", "Fear and Trembling"], ["deadline", "2019-06-11 00:00:00"], ["category_id", 18], ["image", "https://robohash.org/doloresipsumarchitecto.png?size=300x300&set=set1"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "deadline", "category_id", "image") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2019-05-23 10:03:51.600971"], ["updated_at", "2019-05-23 10:03:51.600971"], ["title", "The Way of All Flesh"], ["deadline", "2019-05-31 00:00:00"], ["category_id", 18], ["image", "https://robohash.org/expeditaaliquidest.png?size=300x300&set=set1"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "deadline", "category_id", "image") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2019-05-23 10:03:51.603779"], ["updated_at", "2019-05-23 10:03:51.603779"], ["title", "Edna O'Brien"], ["deadline", "2019-05-26 00:00:00"], ["category_id", 18], ["image", "https://robohash.org/oditminusdolor.png?size=300x300&set=set1"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ db/seeds.rb:18
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mEmail Create (0.3ms)[0m  [1m[32mINSERT INTO "emails" ("object", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["object", "Stranger in a Strange Land"], ["body", "Dolor repellendus labore. Voluptas aut voluptatem. Incidunt cumque inventore. Sunt vel qui. Rerum doloremque non."], ["created_at", "2019-05-23 10:03:51.608115"], ["updated_at", "2019-05-23 10:03:51.608115"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mEmail Create (0.2ms)[0m  [1m[32mINSERT INTO "emails" ("object", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["object", "Infinite Jest"], ["body", "Quidem voluptas asperiores. Odio beatae officiis. Velit ex dolorum."], ["created_at", "2019-05-23 10:03:51.610693"], ["updated_at", "2019-05-23 10:03:51.610693"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mEmail Create (0.2ms)[0m  [1m[32mINSERT INTO "emails" ("object", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["object", "Clouds of Witness"], ["body", "Aut rem similique. Qui earum fugit. Corporis aliquid quo."], ["created_at", "2019-05-23 10:03:51.612922"], ["updated_at", "2019-05-23 10:03:51.612922"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mEmail Create (0.2ms)[0m  [1m[32mINSERT INTO "emails" ("object", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["object", "Arms and the Man"], ["body", "Molestias laboriosam et. Distinctio provident enim. Eos dolores porro. Molestiae explicabo dolor."], ["created_at", "2019-05-23 10:03:51.615364"], ["updated_at", "2019-05-23 10:03:51.615364"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mEmail Create (0.2ms)[0m  [1m[32mINSERT INTO "emails" ("object", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["object", "The Mirror Crack'd from Side to Side"], ["body", "Pariatur non sed. Hic dolores dolorem. Voluptas quibusdam laudantium."], ["created_at", "2019-05-23 10:03:51.617835"], ["updated_at", "2019-05-23 10:03:51.617835"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ db/seeds.rb:23
+Started GET "/" for ::1 at 2019-05-23 12:03:53 +0200
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:7
+  [1m[36mEmail Load (0.1ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/emails/index.html.erb:13
+  Rendered emails/index.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Email with 'id'=41):
+  
+app/views/emails/index.html.erb:13:in `_app_views_emails_index_html_erb__1018770594468233846_70123306085400'
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" ORDER BY "emails"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/" for ::1 at 2019-05-23 12:04:40 +0200
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:7
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/views/emails/index.html.erb:13
+  Rendered emails/_each.html.erb (0.4ms)
+  Rendered emails/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+Completed 200 OK in 28ms (Views: 26.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-05-23 12:04:43 +0200
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:7
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/views/emails/index.html.erb:13
+  Rendered emails/_each.html.erb (0.4ms)
+  Rendered emails/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+Completed 200 OK in 36ms (Views: 34.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-05-23 12:04:43 +0200
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:7
+  [1m[36mEmail Load (0.1ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/views/emails/index.html.erb:13
+  Rendered emails/_each.html.erb (0.3ms)
+  Rendered emails/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 35ms (Views: 33.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-05-23 12:04:43 +0200
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:7
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/views/emails/index.html.erb:13
+  Rendered emails/_each.html.erb (0.3ms)
+  Rendered emails/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 32ms (Views: 30.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-05-23 12:04:44 +0200
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:7
+  [1m[36mEmail Load (0.1ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/views/emails/index.html.erb:13
+  Rendered emails/_each.html.erb (0.4ms)
+  Rendered emails/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 30ms (Views: 28.8ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mCategory Destroy (0.3ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 16]]
+  ↳ db/seeds.rb:1
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mCategory Destroy (0.2ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 17]]
+  ↳ db/seeds.rb:1
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mCategory Destroy (0.2ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 18]]
+  ↳ db/seeds.rb:1
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 107]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 108]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 109]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 110]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 111]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 112]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 113]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mTask Destroy (0.1ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 114]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 115]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.1ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 43]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 44]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 45]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 46]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "emails" WHERE "emails"."id" = $1[0m  [["id", 47]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mCategory Create (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Metafiction"], ["created_at", "2019-05-23 10:05:04.709583"], ["updated_at", "2019-05-23 10:05:04.709583"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "deadline", "category_id", "image") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2019-05-23 10:05:04.714656"], ["updated_at", "2019-05-23 10:05:04.714656"], ["title", "Vanity Fair"], ["deadline", "2019-06-13 00:00:00"], ["category_id", 19], ["image", "https://robohash.org/blanditiiscumaccusamus.png?size=300x300&set=set1"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "deadline", "category_id", "image") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2019-05-23 10:05:04.716969"], ["updated_at", "2019-05-23 10:05:04.716969"], ["title", "Moab Is My Washpot"], ["deadline", "2019-06-05 00:00:00"], ["category_id", 19], ["image", "https://robohash.org/impeditnesciuntquas.png?size=300x300&set=set1"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "deadline", "category_id", "image") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2019-05-23 10:05:04.719195"], ["updated_at", "2019-05-23 10:05:04.719195"], ["title", "The Stars' Tennis Balls"], ["deadline", "2019-06-10 00:00:00"], ["category_id", 19], ["image", "https://robohash.org/eosminusin.png?size=300x300&set=set1"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mCategory Create (0.1ms)[0m  [1m[32mINSERT INTO "categories" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Textbook"], ["created_at", "2019-05-23 10:05:04.721479"], ["updated_at", "2019-05-23 10:05:04.721479"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "deadline", "category_id", "image") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2019-05-23 10:05:04.723495"], ["updated_at", "2019-05-23 10:05:04.723495"], ["title", "Mr Standfast"], ["deadline", "2019-05-31 00:00:00"], ["category_id", 20], ["image", "https://robohash.org/voluptatumvitaeconsectetur.png?size=300x300&set=set1"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "deadline", "category_id", "image") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2019-05-23 10:05:04.725721"], ["updated_at", "2019-05-23 10:05:04.725721"], ["title", "Dance Dance Dance"], ["deadline", "2019-05-31 00:00:00"], ["category_id", 20], ["image", "https://robohash.org/explicaboplaceatut.png?size=300x300&set=set1"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "deadline", "category_id", "image") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2019-05-23 10:05:04.728089"], ["updated_at", "2019-05-23 10:05:04.728089"], ["title", "Frequent Hearses"], ["deadline", "2019-06-01 00:00:00"], ["category_id", 20], ["image", "https://robohash.org/culpadoloribusqui.png?size=300x300&set=set1"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Metafiction"], ["created_at", "2019-05-23 10:05:04.730509"], ["updated_at", "2019-05-23 10:05:04.730509"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "deadline", "category_id", "image") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2019-05-23 10:05:04.732896"], ["updated_at", "2019-05-23 10:05:04.732896"], ["title", "All Passion Spent"], ["deadline", "2019-06-02 00:00:00"], ["category_id", 21], ["image", "https://robohash.org/ullamnatuseos.png?size=300x300&set=set1"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "deadline", "category_id", "image") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2019-05-23 10:05:04.735232"], ["updated_at", "2019-05-23 10:05:04.735232"], ["title", "The House of Mirth"], ["deadline", "2019-06-02 00:00:00"], ["category_id", 21], ["image", "https://robohash.org/cumqueaperiamconsequatur.png?size=300x300&set=set1"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "deadline", "category_id", "image") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2019-05-23 10:05:04.737603"], ["updated_at", "2019-05-23 10:05:04.737603"], ["title", "Recalled to Life"], ["deadline", "2019-06-14 00:00:00"], ["category_id", 21], ["image", "https://robohash.org/autmagninihil.png?size=300x300&set=set1"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ db/seeds.rb:18
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mEmail Create (0.2ms)[0m  [1m[32mINSERT INTO "emails" ("object", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["object", "A Monstrous Regiment of Women"], ["body", "Totam ea doloremque. Sapiente nulla molestiae. Quidem nam doloribus. Voluptas quaerat et. Corporis quia molestiae. Et dolorem error. Et qui temporibus. Quo culpa dolores. Voluptas culpa qui."], ["created_at", "2019-05-23 10:05:04.741685"], ["updated_at", "2019-05-23 10:05:04.741685"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mEmail Create (0.2ms)[0m  [1m[32mINSERT INTO "emails" ("object", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["object", "Many Waters"], ["body", "Aliquid eum dolor. Sunt at alias. Aut quibusdam aut. Nobis suscipit quidem. Magni voluptatem ipsa. Sint et repudiandae. Occaecati velit sunt. Laudantium ipsam soluta. Eos ut repellat. Cumque asperiores et. Maxime minima id."], ["created_at", "2019-05-23 10:05:04.744317"], ["updated_at", "2019-05-23 10:05:04.744317"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mEmail Create (0.2ms)[0m  [1m[32mINSERT INTO "emails" ("object", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["object", "Blood's a Rover"], ["body", "Blanditiis officiis at. Autem eligendi minus. Est illum harum. Provident praesentium velit. Architecto dolorem sed. Hic enim et. Maxime est quam. Esse possimus quia. Iure doloribus labore."], ["created_at", "2019-05-23 10:05:04.746643"], ["updated_at", "2019-05-23 10:05:04.746643"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mEmail Create (0.2ms)[0m  [1m[32mINSERT INTO "emails" ("object", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["object", "If I Forget Thee Jerusalem"], ["body", "Voluptas veritatis adipisci. Sit quo maiores. Laudantium laboriosam voluptatum. Voluptatem deserunt et. Repellat fugiat atque. Rerum eveniet repellat. Nihil rerum velit. Eum rerum saepe. Labore voluptatibus doloremque. Odio dolorem alias. Veritatis facere animi. Ut aliquid harum."], ["created_at", "2019-05-23 10:05:04.749392"], ["updated_at", "2019-05-23 10:05:04.749392"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mEmail Create (0.3ms)[0m  [1m[32mINSERT INTO "emails" ("object", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["object", "Consider Phlebas"], ["body", "Velit voluptates unde. Debitis repellendus aut. Veniam doloribus nisi. Fugit sunt distinctio. Porro voluptas ea. Rerum repudiandae autem. Sed et ut. Porro maxime est. Odio aut dolores. Veritatis esse quia. Ut officiis et. Perspiciatis eligendi ipsum."], ["created_at", "2019-05-23 10:05:04.752176"], ["updated_at", "2019-05-23 10:05:04.752176"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ db/seeds.rb:23
+Started GET "/" for ::1 at 2019-05-23 12:05:16 +0200
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:7
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 52], ["LIMIT", 1]]
+  ↳ app/views/emails/index.html.erb:13
+  Rendered emails/_each.html.erb (0.4ms)
+  Rendered emails/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 36ms (Views: 34.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/emails" for ::1 at 2019-05-23 12:05:27 +0200
+Processing by EmailsController#create as JS
+  Parameters: {"authenticity_token"=>"dKFkQg9WKz1AaDHGh5yeDmAKjOhrOmrLRzDCZlAFgpNv59U5HyQMSjyAJl0UH4QX8TGsAoiNQ8/ZpMaUJwvYFw=="}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/emails_controller.rb:10
+  [1m[36mEmail Create (0.2ms)[0m  [1m[32mINSERT INTO "emails" ("object", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["object", "Let Us Now Praise Famous Men"], ["body", "Ut sed aut. Beatae sed necessitatibus. Tenetur doloremque reprehenderit."], ["created_at", "2019-05-23 10:05:27.457512"], ["updated_at", "2019-05-23 10:05:27.457512"]]
+  ↳ app/controllers/emails_controller.rb:10
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/emails_controller.rb:10
+  Rendering emails/create.js.erb
+  Rendered emails/_new.html.erb (0.6ms)
+  Rendered emails/create.js.erb (1.5ms)
+Completed 200 OK in 11ms (Views: 4.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2019-05-23 12:06:14 +0200
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/julie/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" ORDER BY "emails"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:4
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:7
+  Rendered emails/_each.html.erb (0.4ms)
+  Rendered emails/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_navbar.html.erb (3.4ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 291ms (Views: 269.0ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/" for ::1 at 2019-05-23 12:06:14 +0200
+Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" ORDER BY "emails"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:4
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:7
+  Rendered emails/_each.html.erb (0.3ms)
+  Rendered emails/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+Completed 200 OK in 33ms (Views: 31.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-05-23 12:06:14 +0200
+Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" ORDER BY "emails"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:4
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:7
+  Rendered emails/_each.html.erb (0.4ms)
+  Rendered emails/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-05-23 12:06:14 +0200
+Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" ORDER BY "emails"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:4
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:7
+  Rendered emails/_each.html.erb (0.4ms)
+  Rendered emails/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-05-23 12:06:15 +0200
+Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" ORDER BY "emails"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:4
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:7
+  Rendered emails/_each.html.erb (0.4ms)
+  Rendered emails/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+Completed 200 OK in 26ms (Views: 24.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/emails" for ::1 at 2019-05-23 12:06:16 +0200
+Processing by EmailsController#create as JS
+  Parameters: {"authenticity_token"=>"06D0cscVa69YcF4pECM3+RkwPEHJP5CBk3DxTeQGRTrI5kUJ12dM2CSYSbKDoC3giAscqyqIuYUN5PW/kwgfvg=="}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/emails_controller.rb:11
+  [1m[36mEmail Create (0.6ms)[0m  [1m[32mINSERT INTO "emails" ("object", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["object", "The Sun Also Rises"], ["body", "Assumenda quo suscipit. Ad quo tempora. Quod aut pariatur."], ["created_at", "2019-05-23 10:06:16.730923"], ["updated_at", "2019-05-23 10:06:16.730923"]]
+  ↳ app/controllers/emails_controller.rb:11
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/emails_controller.rb:11
+  Rendering emails/create.js.erb
+  Rendered emails/_new.html.erb (0.3ms)
+  Rendered emails/create.js.erb (1.6ms)
+Completed 200 OK in 96ms (Views: 4.6ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/" for ::1 at 2019-05-23 12:06:19 +0200
+Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" ORDER BY "emails"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:4
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:7
+  Rendered emails/_each.html.erb (0.3ms)
+  Rendered emails/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 61ms (Views: 58.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/emails" for ::1 at 2019-05-23 12:06:22 +0200
+Processing by EmailsController#create as JS
+  Parameters: {"authenticity_token"=>"E5crUeIgcSl31hgwb8qLpEd68IfkUk/7xWx8EsfSJKMI0Zoq8lJWXgs+D6v8SZG91kHQbQflZv9b+HjgsNx+Jw=="}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/emails_controller.rb:11
+  [1m[36mEmail Create (0.3ms)[0m  [1m[32mINSERT INTO "emails" ("object", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["object", "Consider Phlebas"], ["body", "Doloribus soluta magnam. Debitis explicabo quis. Est similique qui."], ["created_at", "2019-05-23 10:06:22.089902"], ["updated_at", "2019-05-23 10:06:22.089902"]]
+  ↳ app/controllers/emails_controller.rb:11
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/emails_controller.rb:11
+  Rendering emails/create.js.erb
+  Rendered emails/_new.html.erb (0.5ms)
+  Rendered emails/create.js.erb (1.6ms)
+Completed 200 OK in 10ms (Views: 4.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for ::1 at 2019-05-23 12:06:22 +0200
+Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" ORDER BY "emails"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:4
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:7
+  Rendered emails/_each.html.erb (0.3ms)
+  Rendered emails/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 24ms (Views: 22.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-05-23 12:08:31 +0200
+Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" ORDER BY "emails"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:4
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:7
+  Rendered emails/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 0.4ms)
+
+
