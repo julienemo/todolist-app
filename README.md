@@ -1,24 +1,22 @@
-# README
+Julie Kwok
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+Clone the repo, bundle, create db if needed, migrate and seed.
 
-* Ruby version
+Launch the server then go to: http://localhost:3000/
 
-* System dependencies
+The page is presented in three parts:
 
-* Configuration
+* on top: the "check mail" button generates a new mail, marked as activat item in the list (2.3 :heavy_check_mark:)
 
-* Database creation
+* below on the left : a list of all recived mails
 
-* Database initialization
+* below on the right: a detailed view of selected email(empty by default) (2.2 :heavy_check_mark:)
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+click any mail in the list on the left to visualize its content detail on the right. (2.4 :heavy_check_mark:)
 
-* Deployment instructions
+Once a mail is selected, two buttons will appear below the content details:
 
-* ...
+* Delete and
+* Mark as unread
