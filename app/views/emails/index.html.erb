@@ -11,7 +11,7 @@
   </div>
   <div class="col-8">
     <%= render "each", e: Email.find(1) %>
-    <%= button_to "Check mail", emails_path, class: "btn btn-info mt-5", remote: true %>
+    <%= button_to "Check mail", emails_path, title: "Click to recieve a new mail *^0^*", class: "btn btn-primary mt-5", remote: true %>
   </div>
 
 </div>
